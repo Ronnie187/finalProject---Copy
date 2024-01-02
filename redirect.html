@@ -11,19 +11,42 @@
             var h1 = document.createElement("h1");
             h1.textContent = clickedPack.name;
             
-            var img = document.createElement("h1")
-            img.textContent = clickedImg;
+            var img = document.createElement("img");
+            img.src = clickedImg;
 
             var h2 = document.createElement("h2");
             h2.textContent = clickedPack.description;
 
             var Redcontainer = document.getElementById('Redcontainer');
             var div = document.createElement('div');
+            div.style.height = "100%";
 
             div.appendChild(img);
             div.appendChild(h1);
             div.appendChild(h2);
+            
+            var lDesc = clickedPack.LongDescription;
+            
+            var ul = document.createElement("ul");
+            ul.className = "circle-list";
 
+
+            for(var j = 0;j<lDesc.length;j++){
+                var li = document.createElement("li");
+                var h4 = document.createElement("h4");
+                h4.textContent = lDesc[j];
+                li.appendChild(h4);
+
+
+                ul.appendChild(li);
+                }
+            div.appendChild(ul);
+
+            var price = document.createElement("h2");
+            price.textContent = clickedPack.price;
+            div.appendChild(price);
+
+            
             Redcontainer.appendChild(div);
 
             // Display reviews
@@ -47,7 +70,7 @@
                     starDiv.appendChild(star);
                 }
 
-                var descriptionDiv = document.createElement('div');
+                var descriptionDiv = document.createElement('div'); 
                 descriptionDiv.textContent = 'Description: ' + review.description;
 
                 reviewDiv.appendChild(starDiv);
@@ -58,6 +81,7 @@
         });
     </script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
         body{
             background-color: rgb(255, 255, 255);
             margin: 0;
@@ -69,45 +93,80 @@
 
         .container1{
             width: 100%;
-            height: 1000px;
+            height: 1100px;
             display: flex;
             flex-direction: column;
-            background-color: aqua;
+            /* background-color: aqua; */
+            background-color: white;
+            font-family: 'Poppins', sans-serif;
         }
 
         .topbar{
-    margin-left: 5%;
+        margin-left: 5%;
             top: 10px;
             width: 90%;
-            padding-top: 15px;
-            padding-bottom: 15px;
+            height: 70px;
+            /* padding-top: 15px;
+            padding-bottom: 15px; */
             display: flex;
             border-bottom: 3px solid transparent;
-            background-color: teal;
+            /* background-color: teal; */
+            background-color: whitesmoke;
             position: fixed;
+            border: 1px solid;
             border-radius: 20px;
             }
-        .topbar h1{
-            color: white;
-            margin: 0;
-
+        
+        .topbar .tabs{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-left: 27%;
         }
+
+        .tabs .tabs1{
+            padding: 3px 30px 3px 30px;
+            border-radius: 15px;
+        }
+
+        .tabs a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .tabs a:hover{
+            color: darkorange;
+            transition-duration: 0.2s;
+            
+        }
+
         .container2{
             margin-top: 100px;
-            height: 450px;
+            height: 900px;
             width: 80%;
-            background-color: brown;
+            /* background-color: brown; */
+            background-color: hsl(39, 77%, 83%,0.5);
             margin-left: 10%;
+            border-radius: 20px;
+        }
+        .container2 img{
+            width: 40%;
+            height: 250px;
+            margin-top: 10px;
+            margin-left: 30%;
         }
         .reviews{
             height: 450px;
             width: 80%;
-            background-color: red;
+            /* background-color: red; */
+            background-color: hsl(39, 77%, 83%,0.5);
             margin-left: 9.5%;
             border-radius: 10px;
             border: solid;
             border-width: thick;
-            border-color: maroon;
+            /* border-color: maroon; */
+            border-color: black;
             overflow: auto;
             display: flex;
             flex-direction: row;
@@ -132,7 +191,13 @@
 
     <div class="container1" >
         <div class="topbar">
-            <h1>Topbar</h1>
+            <!-- <h1>Topbar</h1> -->
+            <div class="tabs">
+                <div class="tabs1"><a href="kentoy.html" target="_self"><h4>Home</h4></a></div>
+                <div class="tabs1"><a href="Package2.html" target="_self"><h4>Tour Packages</h4></a></div>
+                <div class="tabs1"><a href="" target="_self"><h4>Promos</h4></a></div>
+                <div class="tabs1"><a href="" target="_self"><h4>About us</h4></a></div>
+            </div>
         </div>
         <div class="container2" id="Redcontainer">
 
