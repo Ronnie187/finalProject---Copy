@@ -7,93 +7,106 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="kentoy.css">
+    <link rel="stylesheet" href="style1.css">
     <title>CebTours - Cebu Tours</title>
 </head>
 
 <body>
-<!----------------- Header by Kentoy ----------------->
-<header class="header">
-    <div class="logo"><img src="CEBTOURS LOGO2.svg" alt="" width="200px" height="150px"></div>
-    <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#book">Book now</a>
-        <a href="#packages">Packages</a>
-        <a href="#about">About</a>
-    </nav>
-</header>
 
-<div class="main">
-    <div class="box2"><h4>
-        <div class="welcome"><h1>WELCOME TO <span class="ceb"><i>CEB</i></span><span class="tours">TOURS</span>!</h1></div>
-        <div class="search">
-            <form>
-                <ion-icon name="search-circle-outline"></ion-icon>
-                <input type="text" placeholder="Search for tour packages">
-                    <button type="submit">Search</button>
-                    <!-- <ion-icon name="search-circle-outline"></ion-icon> -->
-            </form>
-        </div>
-    </div>
-</div>
+    <!----------------- Header ----------------->
 
-<div class="box3">
-    <div class="container1">
-        <div class="statement1">
-            <div class="description1">
-                <img src="person_booking.jpg" alt="" width="262px" height="190px">
-                <div class="line"></div>
-                <p><i>Discover the Cebu with ease! CebTours makes booking your dream tour package a breeze, 
-                    ensuring a hassle-free and enjoyable experience.</i></p>
-            </div>
-        </div>
-        <div class="statement2">
-            <div class="description2">
-                <img src="cebutour.jpg" alt="" width="262px" height="190px">
-                <div class="line"></div><p><i>Escape the ordinary and immerse yourself in extraordinary journeys. 
-                    Explore our diverse range of meticulously planned tour packages tailored just for you.</i></p>
-            </div>
-        </div>
-        <div class="statement3">
-            <div class="description3">
-                <img src="magellanscross.jpg" alt="" width="262px" height="190px">
-                <div class="line"></div>
-                <p><i>Explore, experience, and embrace new horizons with our expertly designed tour packages. 
-                    Your next great adventure starts here!</i></p>
+    <header class="header">
+        <div class="logo"><img src="CEBTOURS LOGO.svg" alt="Logo of CebTours"></div>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#offers">What We Offer</a>
+            <a href="#packages">Packages</a>
+            <a href="#about">About Us</a>
+        </nav>
+    </header>
+
+    <!----------------- Home Section  ----------------->
+
+    <div class="home-section" id="home">
+        <div class="home">
+            <div class="search-box"><h4>
+                <div class="welcome"><h1>WELCOME TO <span class="ceb"><i>CEB</i></span><span class="tours">TOURS</span>!</h1></div>
+                <div class="search">
+                    <form>
+                        <ion-icon name="search-circle-outline"></ion-icon>
+                        <input type="text" placeholder="Search for tour packages">
+                            <button type="submit">Search</button>
+                            <!-- <ion-icon name="search-circle-outline"></ion-icon> -->
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="footer">
-    <div class="footercontainer">
-        <div class="socialIcons">
-            <h3 class="follow">Follow us</h3>
-            <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
-            <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
-            <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+
+    <!----------------- What We Offer Section  ----------------->
+
+    <div class="what-we-offer-section" id="offers">
+        <div class="card-container">
+            <div class="card">
+                <img src="person_booking.jpg">
+                <div class="card-content">
+                    <p><i>Discover the Cebu with ease! CebTours makes booking your dream tour package a breeze, 
+                        ensuring a hassle-free and enjoyable experience.
+                    </i></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="cebutour.jpg">
+                <div class="card-content">
+                    <p><i>Escape the ordinary and immerse yourself in extraordinary journeys. 
+                        Explore our diverse range of meticulously planned tour packages tailored just for you.
+                    </i></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="magellanscross.jpg">
+                <div class="card-content">
+                    <p><i>Explore, experience, and embrace new horizons with our expertly designed tour packages. 
+                        Your next great adventure starts here!
+                    </i></p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="footercontainer">
-            <h3>Additional Resouces</h3>
-            <ul class="list" type="none">
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Privacy policy</a></li>
-                <li><a href="">Terms and conditions</a></li>
-            </ul>
-    </div>
-
-    <div class="footercontainer">
-        <h3>Contact Us</h3>
-        <p>Email: test@test.com</p>
-        <p>Phone: 09654878484</p>
-        <p>Address: Kilid balay sa gwapo</p>
-    </div>
-</div>
-<div class="copyright">
-    <p>&copy; 2024 CebTour. All rights reserved</p>  
-</div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-column">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Additional Resources</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="terms-and-condition.html">Terms and conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#">Email: test@test.com</a></li>
+                        <li><a href="#">Phone: 09654878484</a></li>
+                        <li><a href="#">Address: Kilid balay sa gwapo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright"><p>&copy; 2024 CebTour. All rights reserved</p></div>
+   </footer>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
