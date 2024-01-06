@@ -1,14 +1,15 @@
+/* ========================= For all elements ========================= */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }
-  
+  /* ========================= Body ========================= */
   body {
     background: radial-gradient(circle, rgba(255, 165, 0, 0.3), rgba(0, 128, 0, 0.5));
   }
-  
+    /* ========================= Topbar ========================= */
   .header {
     position: fixed;
     top: 0;
@@ -38,7 +39,7 @@
 .header:hover::before{
     left: 100%;
 }
-
+/* ========================= Navbar ========================= */
 .navbar a {
     position: relative;
     font-size: 18px;
@@ -52,7 +53,7 @@
     color: #f0b000;
     transition: .3s;
 }
-
+/* ========================= Logo ========================= */
 .logo{
     width: 120px;
     height: 40px;
@@ -65,7 +66,7 @@
   width: 120px; 
   height: auto; 
 }
-
+/* ========================= Header ========================= */
   .header img {
     width: 5cm;
     height: 4cm; 
@@ -82,7 +83,7 @@
     color: black;
     margin-bottom: none;
   }
-  
+  /* ========================= About us ========================= */
   .about-us {
     display: flex;
     align-items: center;
@@ -115,7 +116,7 @@
     margin: 15px 0;
   }
   
-  
+  /* ========================= Footer ========================= */
   footer {
     background: #343434;
     /* padding-top: 50px; */
@@ -123,7 +124,7 @@
     color: white;
     
 }
-
+/* ========================= Footer Container ========================= */
 .footer-container {
     width: 1140px; /*1140px*/
     margin: auto;
@@ -135,12 +136,13 @@
     width: 33.3%; /*33.3%*/
     margin-left: 30px;
 }
-
+/* ========================= Heading 3 within the footer ========================= */
 h3 {
     font-size: 28px;
     margin-bottom: 15px;
     text-align: center;
 }
+/* =========================  Paragraph within the footer ========================= */
 .footer-content p{
     width: 190px; /*190px*/
     margin: auto;
@@ -149,6 +151,7 @@ h3 {
 .footer-content ul {
     text-align: center;
 }
+/* =========================  For the list items in the footer ========================= */
 .list {
     padding: 0;
 }
@@ -159,7 +162,7 @@ h3 {
     padding: 7px;
     position: relative;
 }
-
+/* =========================  Anchor tag within list items  ========================= */
 .list li a{
     color: white;
 }
@@ -178,6 +181,7 @@ h3 {
 .list li:hover::before{
     width: 70px;
 }
+/* =========================  Social icons container  ========================= */
 .social-icons{
     text-align: center;
     padding: 0;
@@ -191,6 +195,7 @@ h3 {
     color: white;
     font-size: 25px;
 }
+/* =========================  General anchor tag  ========================= */
 a{
     text-decoration: none;
 }
@@ -200,6 +205,7 @@ a:hover{
 .social-icons i:hover{
     color: #f18930;
 }
+/* =========================  Bottom Bar  ========================= */
 .bottom-bar{
     background: #f18930;
     text-align: center;
@@ -213,26 +219,26 @@ a:hover{
     /* padding: 7px; */
 }
   
-  
+  /* =========================  Flex container with wrapped items  ========================= */
   .row {
     display: flex;
     flex-wrap: wrap;
     padding: 2em 1em;
     text-align: center;
   }
-  
+  /* =========================  Column within the flex container  ========================= */
   .column {
     width: 100%;
     padding: 0.5em 0;
   }
-  
+  /* =========================  The main heading  ========================= */
   h1 {
     width: 100%;
     text-align: center;
     font-size: 3.5em;
     color: #1f003b;
   }
-  
+   /* =========================  Individual cards  ========================= */
   .card {
     box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
     padding: 1em;
@@ -283,7 +289,7 @@ a:hover{
     color: inherit;
     font-size: 1.4em;
   }
-  
+  /* =========================  Hover for the card ========================= */
   .card:hover {
     background: radial-gradient(circle,rgba(0, 128, 0, 0.5), rgba(255, 165, 0, 0.3));
     color: #ffffff;
@@ -292,7 +298,7 @@ a:hover{
   .card:hover .img-container {
     transform: scale(1.15);
   }
-
+ /* =========================  Content within the 'about-us' section ========================= */
   .about-us .content {
     display: flex;
     flex-direction: column;
@@ -312,11 +318,13 @@ a:hover{
     line-height: 1.5;
     margin: 15px 0;
 }
+/* ========================= For a section with specific border and background properties ========================= */
 section {
   border: none; 
   border-radius: 15px; 
   background-clip: padding-box; 
 }
+/* ========================= images with rounded corners  ========================= */
 .rounded-image {
   border-radius: 10px; 
   overflow: hidden; 
@@ -324,20 +332,22 @@ section {
 
 
 
-  
+  /* ========================= For screens with a minimum width of 768px  ========================= */
   @media (min-width: 768px) {
     section {
       padding: 1em 7em;
     }
   }
-  
+    /* ========================= For screens with a minimum width of 992px  ========================= */
   @media (min-width: 992px) {
     section {
       padding: 1em;
     }
+      /* ========================= For cards within larger screens  ========================= */
     .card {
       padding: 5em 1em;
     }
+      /* ========================= For columns within larger screens  ========================= */
     .column {
       flex: 0 0 33.33%;
       max-width: 33.33%;
